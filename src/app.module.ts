@@ -7,6 +7,10 @@ import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
 import { ClothingModule } from './clothing/clothing.module';
+import { ClothingModule } from './clothing/clothing.module';
+import { TopsModule } from './tops/tops.module';
+import { BottomsModule } from './bottoms/bottoms.module';
+import { ClothingModule } from './clothing/clothing.module';
 
 @Module({
   imports: [
@@ -15,6 +19,8 @@ import { ClothingModule } from './clothing/clothing.module';
     UsersModule,
     AuthModule,
     ClothingModule,
+    TopsModule,
+    BottomsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
